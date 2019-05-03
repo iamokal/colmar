@@ -5,12 +5,6 @@ html {
   font-size: 16px;
 }
 
-/*
-.center {
-  text-align: center;
-}
-*/
-
 .container {
   width: 100vw;
 }
@@ -42,7 +36,6 @@ header {
   position: fixed;
   z-index: 100;
   height: 4rem;
-  width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
 }
@@ -86,17 +79,14 @@ header .mobile {
 }
 
 @media only screen and (max-width: 480px) {
-  header .desktop {
+  
+  header .desktop .content {
     display: none;
   }
 
   header .mobile {
     display: block;
     width: 100%;
-  }
-
-  header .content {
-    padding: .5rem 0;
   }
 
   header .mobile ul {
@@ -109,15 +99,7 @@ header .mobile {
   header .mobile li {
     padding: 0;
   }
-
-/*
-  header .mobile .button {
-    padding: .1875rem .5rem;
-    background-color: #9dc20b;
-    line-height: 1.6;
-    color: white;
-  }
-*/
+  
 }
 
 /* Sign Up Section */
@@ -174,35 +156,28 @@ header .mobile {
 
 @media only screen and (max-width: 480px) {
   #intro-section {
-    align-items: center;
-    justify-content: center;
-    height: 28rem;
+/*   height: 28rem; */
+  display: flex;
+  background-image: url('../images/banner-landingpage.jpg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-top: 2rem;
   }
 
-  #signup {
-    position: static;
-    width: auto;
-    height: auto;
-    border: none;
-  }
-/*
+ #signup {
+  display: flex;
+  position: static;
+  width: 100%;
+  height: auto;
+  border: none;
+ }
 
-  #signup .content {
-    margin-top: 0;
-  }
+#signup .image-container {
+  width: 100%;
+  height: auto;
+  } 
 
-  #signup .email {
-    display: none;
-  }
-
-  #signup h1 {
-    font-size: 3.125rem;
-  }
-
-  #signup h2 {
-    font-size: 2.25rem;
-  }
-*/
 }
 
 /* Info Section */
@@ -295,17 +270,21 @@ header .mobile {
 }
 
 .info h5 a:link {
-	color: cornflowerblue;
+  color: cornflowerblue;
 }
 
 .info h5 a:visited {
-	color: darkgray;
+  color: darkgray;
 }
 
 @media only screen and (max-width: 480px) {
   #info-section {
     flex-flow: column;
     padding: 0;
+  }
+  
+  #info-section info1 {
+	display: none;
   }
 
   .info{
@@ -316,6 +295,36 @@ header .mobile {
   .info .content {
     padding: 1rem 1rem 2rem 1rem;
   }
+  
+  #info {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  height: auto;
+  }
+
+.info .center {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border: 2px dotted green;
+  }
+
+.center .image-container {
+  padding: 1rem;
+  border: 2px solid pink;
+  width: 100%;
+
+  } 
+
+.center .content {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  }
+
 }
 
 /* Course Section */
@@ -396,11 +405,14 @@ header .mobile {
   }
 
   #course-section .mobile {
+    background-color: lightgray;
+    color: #746e6e;
     margin-bottom: .5rem;
   }	
 
   #course-section h3 {
     padding: 1rem 0 1.5rem 1rem;
+    font-weight: 700;
   }
   
   #course-section li {
@@ -445,20 +457,15 @@ header .mobile {
 }
 
 
-
 @media only screen and (max-width: 480px) {
-  #thesis .image-container {
+  #thesis-section .image-container {
 	  margin: 0 auto;
 	  width: 100%;
   }
   
-  #thesis .content {
+  #thesis-section .content .info {
 	  display: none;
   } 
-
-  #thesis-section .info {
-	display: none;
-  }
   
 }
 
