@@ -9,12 +9,6 @@ html {
   width: 100vw;
 }
 
-.button {
-  border-radius: 4px;
-  background-color: #4a4a4a;
-  color: white;
-}
-
 .image-container {
   overflow: hidden;
 }
@@ -22,12 +16,6 @@ html {
 .image-container img {
   display: block;
   max-width: 100%;
-}
-
-@media only screen and (max-width: 760px) {
-  .main-content {
-    top: 2.5625rem;
-  }
 }
 
 /* Header */
@@ -80,7 +68,7 @@ header .mobile {
 
 @media only screen and (max-width: 480px) {
   
-  header .desktop .content {
+  header .desktop {
     display: none;
   }
 
@@ -152,6 +140,9 @@ header .mobile {
   padding-bottom: .5rem;
   text-align: center;
   font-size: 1rem;
+  border-radius: 4px;
+  background-color: #4a4a4a;
+  color: white;
 }
 
 @media only screen and (max-width: 480px) {
@@ -160,7 +151,8 @@ header .mobile {
   display: block;
   width: 100vw;
   height: auto;
-  margin: 0 auto;
+  margin: 0;
+  border: none;
   background-image: url('../images/banner-landingpage.jpg');
   background-size: cover;
   background-position: bottom;
@@ -168,15 +160,18 @@ header .mobile {
   padding-top: 2rem;
   }
 
- #signup {
+ #sign-up .header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: static;
-  width: 100%;
-  height: auto;
-  border: none;
+  padding: 0 1rem;
+ }
+ 
+ #sign-up .button {
+  background-color: #979393;
+  padding: 0 1rem;
  }
 
 /*
@@ -296,40 +291,37 @@ header .mobile {
 	display: flex;
 	flex-direction: column;
     margin: 0 auto;
-    padding: 1rem 1rem 2rem 1rem
+    padding: 0 0 1rem 0;
   }
 
   .info .content {
-    padding: 1rem 1rem 2rem 1rem;
+    padding: 0 0 1rem 0;
   }
   
   #info {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  width: 100%;
+  width: 100vw;
   height: auto;
   }
 
-.info .center {
+  .info .center {
   display: flex;
   flex-direction: column;
-  text-align: left;
+  justify-content: center;
+  align-items: center;
   border: 2px dotted green;
-  }
-
-.center .image-container {
-  padding: 1rem;
-  border: 2px solid pink;
-  width: 100%;
-
   } 
 
-.center .content {
+  .center .image-container {
+  padding: 1rem;
+  border: 2px solid pink;
+  } 
+
+  .center .content {
   border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  text-align: left;
   }
 
 }
@@ -410,11 +402,14 @@ header .mobile {
 
   #course-section {
     padding: 0 1rem;
+    background-color: white;
   }
 
   #course-section .mobile {
-	width: 100vw;  
-	height: auto;  
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
     background-color: lightgray;
     color: #746e6e;
     margin-bottom: .5rem;
@@ -445,6 +440,10 @@ header .mobile {
  display: inline-flex;
 }
 
+#thesis-section video {
+  max-width: 100%;
+  }
+
 #thesis-section .info1 .content {
   border: 1px solid green;
   padding-bottom: 1.5rem;
@@ -467,15 +466,14 @@ header .mobile {
 
 
 @media only screen and (max-width: 480px) {
-  #thesis-section img {
+  #thesis-section video {
 	  display: block;
 	  margin: 0 auto;
 	  width: 100%;
 	  height: auto;
-	  overflow: hidden;
   }
   
-  #thesis-section .content .info {
+  #thesis-section #info {
 	  display: none;
   } 
   
