@@ -157,7 +157,10 @@ header .mobile {
 @media only screen and (max-width: 480px) {
   #intro-section {
 /*   height: 28rem; */
-  display: flex;
+  display: block;
+  width: 100vw;
+  height: auto;
+  margin: 0 auto;
   background-image: url('../images/banner-landingpage.jpg');
   background-size: cover;
   background-position: bottom;
@@ -167,16 +170,21 @@ header .mobile {
 
  #signup {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: static;
   width: 100%;
   height: auto;
   border: none;
  }
 
+/*
 #signup .image-container {
   width: 100%;
   height: auto;
   } 
+*/
 
 }
 
@@ -278,17 +286,16 @@ header .mobile {
 }
 
 @media only screen and (max-width: 480px) {
-  #info-section {
-    flex-flow: column;
-    padding: 0;
-  }
+
   
-  #info-section info1 {
+  #info-section .info1 {
 	display: none;
   }
 
-  .info{
-    margin: 0;
+  #info-section .info {
+	display: flex;
+	flex-direction: column;
+    margin: 0 auto;
     padding: 1rem 1rem 2rem 1rem
   }
 
@@ -395,6 +402,7 @@ header .mobile {
   display: none;
 }
 
+
 @media only screen and (max-width: 480px) {
   #course-section .desktop {
     display: none;
@@ -405,21 +413,22 @@ header .mobile {
   }
 
   #course-section .mobile {
+	width: 100vw;  
+	height: auto;  
     background-color: lightgray;
     color: #746e6e;
     margin-bottom: .5rem;
   }	
 
-  #course-section h3 {
+  #course-section .mobile h3 {
     padding: 1rem 0 1.5rem 1rem;
-    font-weight: 700;
+    font-weight: 400;
   }
   
-  #course-section li {
+  #course-section .mobile li {
 	font-size: 1.5rem;
 	background-color: lightgray;
 	padding-bottom: .5rem; 
-	width: 100%;
   }
 
 }
@@ -458,9 +467,12 @@ header .mobile {
 
 
 @media only screen and (max-width: 480px) {
-  #thesis-section .image-container {
+  #thesis-section img {
+	  display: block;
 	  margin: 0 auto;
 	  width: 100%;
+	  height: auto;
+	  overflow: hidden;
   }
   
   #thesis-section .content .info {
