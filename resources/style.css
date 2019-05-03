@@ -1,7 +1,7 @@
 /* Universal Styles */
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
@@ -227,12 +227,19 @@ header .mobile {
   border: 1px solid green;
   padding-top: 2rem;
   padding-bottom: 1.5rem;
+  font-weight: 300;
 }
 
 #info-section .info1 h2 {
   font-size: 2rem;
   font-weight: bold;
   color: #4a4a4a;
+  padding-bottom: 1.5rem;
+}
+
+#info-section .info1 h4 {
+  font-size: .75rem;
+  font-weight: 500;
 }
 
 #info {
@@ -255,26 +262,44 @@ header .mobile {
 } 
 
 .center .content {
-	border: 1px solid red;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 65%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+}
+
+#info-section #info ul li:last-child {
+  background-color: lightgray;
 }
 
 
 .info h3 {
-	font-weight: bold;
-	line-height: 1.75;
+  font-weight: bold;
+  line-height: 1.75;
+  font-size: 1.25rem;
 }
 
 .info h4 {
-	padding-top: .5rem;
-	padding-bottom: .5rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #746e6e ;
 }
 
 .info h5 {
-	font-size: 1rem;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+.info h5 a:link {
+	color: cornflowerblue;
+}
+
+.info h5 a:visited {
+	color: darkgray;
 }
 
 @media only screen and (max-width: 480px) {
@@ -326,6 +351,7 @@ header .mobile {
 .course {
   text-align: left;
   max-width: 30%;
+  height: auto;
   background-color: white;
   border: 1px dashed purple;
   padding-bottom: 1.5rem; /*24px*/
@@ -342,15 +368,18 @@ header .mobile {
   max-width: 100%;
 }
 
-.course h3 {
+.course h4 {
   font-weight: bold;
-  padding-top: 1rem;
+  font-size: 1.25rem;
+  padding-top: .5rem;
   padding-bottom: .5rem;
 
 }
 
 .course p {
+  font-weight: 300;
   padding-top: .5rem;
+  color: #746e6e ;
 }
 
 #course-section .mobile {
@@ -399,15 +428,22 @@ header .mobile {
   border: 1px solid green;
   padding-bottom: 1.5rem;
   color: #746e6e ;
+  line-height: 1.2;
+  font-weight: 300;
 }
 
-#thesis-section .info1 h2 {
-  font-size: 1.5rem;
+#thesis-section .info1 h4 {
+  font-size: 1.25rem;
   font-weight: bold;
-  color: #000000;
+  color: black;
   padding-top: 1.5rem;
   padding-bottom: .5rem;
 }
+
+#thesis-section #info ul li:first-child {
+  background-color: lightgray;
+}
+
 
 
 @media only screen and (max-width: 480px) {
@@ -423,7 +459,7 @@ header .mobile {
   #thesis-section .info {
 	display: none;
   }
-
+  
 }
 
 /* Footer */
@@ -431,6 +467,7 @@ header .mobile {
 footer {
   background-color: #f3f3f3;
   border-top: 1px solid grey;
+  color: #746e6e ;
 }
 
 footer .content {
