@@ -169,8 +169,12 @@ header .mobile {
    background-image: url('../images/banner-landingpage.jpg');
    background-position: bottom;
    background-repeat: no-repeat;
+   background-size: cover;
    padding: 0;
    margin: 0;
+   width: 100%;
+   height: auto;
+   border: 1px solid orange;
   }
 
   #signup {
@@ -183,13 +187,10 @@ header .mobile {
   }
 
   #signup .image-container {
-   display: block;
    width: 100%;
    height: auto;
    padding: 0;
    margin: 0;
-   border: none;
-   border: 1px solid orange;
   }
 
   .header {
@@ -424,7 +425,7 @@ header .mobile {
 
   #course-section {
     background-color: #f6f3f3;
-    padding: 0 1 rem;
+	padding: 0;
   }
 
   #course-section .mobile {
@@ -434,6 +435,7 @@ header .mobile {
 	align-items: stretch;
     color: #746e6e;
     margin-bottom: .5rem;
+    padding: 0 1rem;
   }	
 
   #course-section .mobile li {
@@ -444,7 +446,6 @@ header .mobile {
 	padding: 1rem 0 1.5rem 1rem;
     font-weight: 400;
   }
- 
 
 }
 
