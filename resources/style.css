@@ -86,7 +86,6 @@ header .mobile {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    line-height: 1.6;
   }
 
   header .mobile li {
@@ -161,13 +160,15 @@ header .mobile {
   }
 
  #sign-up  {
+  display: flex;
+  flex-direction: column;
   position: static;
   padding: 0 1rem;
  }
  
 
 #signup .image-container {
-  display: block;
+/*   display: block; */
   width: 100%;
   height: auto;
   margin: 0;
@@ -175,7 +176,7 @@ header .mobile {
   } 
 
 #sign-up .header {
-  display: block;
+/*   display: block; */
   word-spacing: .25rem;
   line-height: 1.2;
   border: 1px solid green;
@@ -293,14 +294,9 @@ header .mobile {
   }
 
   #info-section .info {
-	display: flex;
-	flex-direction: column;
+	display: block;
     margin: 0 auto;
-    padding: 0 0 1rem 0;
-  }
-
-  .info .content {
-    padding: 0 0 1rem 0;
+    padding: 0;
   }
   
   #info {
@@ -309,30 +305,22 @@ header .mobile {
   }
 
   .info .center {
-   display: flex;
-   flex-direction: column;
    border: 2px dotted green;
-   margin: 0;
-   padding: 0;
   } 
 
-  .center .image-container {
+  #info-section .center .image-container {
     padding: 1rem;
     border: 1px solid pink;
     width: 100%;
-    height: auto;
   } 
 
-  .center .content {
+  #info-section .center .content {
    border: 1px solid red;
    display: block;
-   width: 100%;
   }
 
-
-
   #info-section #info ul li:last-child {
-   background-color: white;
+   background-color: #f3f3f3;
   }
 
 }
@@ -482,14 +470,14 @@ header .mobile {
 
 
 @media only screen and (max-width: 480px) {
-  .info1 {
+  #thesis-section .info1 {
   	border: none;
   	padding: 0;
   	margin: 0;
   	width: 100%;
   }
   
-  .course-header {
+  #thesis-section .course-header {
     border-top: 1px solid grey;
   }
 
