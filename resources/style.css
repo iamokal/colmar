@@ -75,6 +75,14 @@ header .mobile {
   #desk-logo {
 	display: none;
   }
+  
+  header .content {
+    padding: 0;
+  }
+  
+  nav a {
+    vertical-align: center;
+	}
 
   header .mobile {
     display: block;
@@ -86,6 +94,7 @@ header .mobile {
     justify-content: space-around;
     align-items: center;
     border: 1px solid orange;
+    background-color: white;
     height: 4rem;
   }
 
@@ -157,9 +166,8 @@ header .mobile {
    background-image: url('../images/banner-landingpage.jpg');
    background-position: bottom;
    background-repeat: no-repeat;
-   width: 100%;
    padding-top: 0rem;
-   margin-top: 4rem;
+   margin-top: 8rem;
   }
 
   #signup {
@@ -172,7 +180,8 @@ header .mobile {
   }
 
   #signup .image-container {
-   width: 100%;
+   display: flex;
+   align-items: stretch;
    padding: 0;
    border: 1px solid orange;
   }
@@ -314,18 +323,20 @@ header .mobile {
    display: flex;
    flex-direction: column;
    border: 2px dotted green;
-   
   } 
 
   #info-section .center .image-container {
     padding: 1rem;
     border: 1px solid pink;
     width: 100%;
+    height: auto;
   } 
   
+/*
   #info-section .center img {
     width: 100%;
   } 
+*/
 
   #info-section .center .content {
    padding-left: 2rem;
@@ -413,7 +424,8 @@ header .mobile {
   }
 
   #course-section {
-    padding: 0 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
     background-color: #f6f3f3;
   }
 
@@ -486,19 +498,22 @@ header .mobile {
    background-color: #f3f3f3;
    padding: 0;
    margin: 0;
-   width: 100%;
   }
 
   #thesis-section .course-header {
     border-top: 1px solid grey;
   }
+  
+  .info1 {
+	display: flex;
+	align-items: stretch;  
+  	border: none;
+    padding: 0;
+  }	
 
   #thesis-section video {
-	display: flex;
-	align-items: stretch;
-	width: 100%;
 	height: auto;
-	text-align: center;
+	width: 100%;
 	padding-bottom: 1.5rem;
   }
   
