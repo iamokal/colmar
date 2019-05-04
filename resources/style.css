@@ -167,21 +167,20 @@ header .mobile {
    background-position: bottom;
    background-repeat: no-repeat;
    padding-top: 0rem;
-   margin-top: 8rem;
+   margin-top: 4rem;
   }
 
   #signup {
    display: flex;
    flex-direction: column;
-   align-items: center;
-   margin-top: 2rem;
+   margin: 0;
    background-color: lightgray;
    font-family: "Roboto", sans-serif;
   }
 
   #signup .image-container {
    display: flex;
-   align-items: stretch;
+   width: 100%;
    padding: 0;
    border: 1px solid orange;
   }
@@ -189,11 +188,10 @@ header .mobile {
   .header {
    display: flex;
    flex-direction: column;
-   justify-content: center;
    word-spacing: .25rem;
    line-height: 1.2;
    padding: 0 1rem;
-   min-height: 50%;
+   height: auto;
   }
 
   #signup .button {
