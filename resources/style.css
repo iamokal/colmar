@@ -79,7 +79,7 @@ header .mobile {
   header .mobile {
     display: block;
     width: 100%;
-/*     padding: 1.1rem 1.5rem; */
+    height: 4rem;
   }
 
   header .mobile ul {
@@ -154,13 +154,14 @@ header .mobile {
   #intro-section {
 /*   height: 28rem; */
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin: 0;
   border: none;
   background-image: url('../images/banner-landingpage.jpg');
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
+  border: 1px solid yellow;
   }
 
  #sign-up  {
@@ -174,6 +175,7 @@ header .mobile {
   width: 100%;
   height: auto;
   margin: 0;
+  padding: 0;
   } 
 
 .header {
@@ -186,7 +188,7 @@ header .mobile {
   }
  
  #sign-up .button {
-  background-color: #979393;
+  background-color: #9e9d9d;
   padding: 0 1rem;
  }
 
@@ -318,12 +320,15 @@ header .mobile {
    justify-content: center;
    align-items: center;
    border: 2px dotted green;
-   width: 100vw;
+   margin: 0;
+   padding: 0;
+   width: 100%;
   } 
 
-  .center .image-container {
+  .info .center img{
    padding: 1rem;
-   width: 100vw;
+   width: 100%;
+   height: auto;	
    border: 2px solid pink;
   } 
 
@@ -334,7 +339,7 @@ header .mobile {
    justify-content: center;
    text-align: left;
    padding: 0 1rem;
-   width: 100vw;
+   width: 100%;
   }
 
   #info-section #info ul li:last-child {
@@ -425,7 +430,7 @@ header .mobile {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-content: center;
+	align-items: center;
     background-color: lightgray;
     color: #746e6e;
     margin-bottom: .5rem;
@@ -441,7 +446,7 @@ header .mobile {
 	background-color: lightgray;
 	margin-bottom: .5rem; 
   }
-  
+ 
 
 }
 
