@@ -71,6 +71,10 @@ header .mobile {
   header .desktop {
     display: none;
   }
+  
+  #desk-logo {
+	display: none;
+  }
 
   header .mobile {
     display: block;
@@ -150,20 +154,17 @@ header .mobile {
   #intro-section {
 /*   height: 28rem; */
   display: flex;
-  width: 100vw;
-  height: auto;
+  flex-wrap: wrap;
   margin: 0;
   border: none;
   background-image: url('../images/banner-landingpage.jpg');
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
-  padding-top: 2rem;
   }
 
  #sign-up  {
-  display: flex;
-  flex-direction: column;
+  display: block;
   position: static;
   padding: 0 1rem;
  }
@@ -175,6 +176,14 @@ header .mobile {
   margin: 0;
   } 
 
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  word-spacing: .25rem;
+  line-height: 1.2;
+  border: 1px solid green;
+  }
  
  #sign-up .button {
   background-color: #979393;
@@ -299,31 +308,37 @@ header .mobile {
   }
   
   #info {
-  width: 100vw;
-  height: auto;
+   width: 100vw;
+   height: auto;
   }
 
   .info .center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 2px dotted green;
-  width: 100vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border: 2px dotted green;
+   width: 100vw;
   } 
 
   .center .image-container {
-  padding: 1rem;
-  border: 2px solid pink;
+   padding: 1rem;
+   width: 100vw;
+   border: 2px solid pink;
   } 
 
   .center .content {
-  border: 1px solid red;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-  padding: 0 1rem;
+   border: 1px solid red;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: left;
+   padding: 0 1rem;
+   width: 100vw;
+  }
+
+  #info-section #info ul li:last-child {
+   background-color: white;
   }
 
 }
@@ -347,7 +362,6 @@ header .mobile {
   padding-bottom: 1rem; /*16px*/
   color: #4a4a4a;
   text-align: center;
-    border: 1px solid green;
 }
 
 
@@ -474,12 +488,17 @@ header .mobile {
   	padding: 0;
   	margin: 0;
   	width: 100%;
-}
+  }
   
+  .course-header {
+    border-top: 1px solid grey;
+  }
+
   #thesis-section video {
 	display: block;
 	height: auto;
 	text-align: center;
+	padding-bottom: 1.5rem;
   }
   
   #thesis-section #info {
