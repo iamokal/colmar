@@ -86,7 +86,6 @@ header .mobile {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 2rem;
     border: 1px solid orange;
   }
 
@@ -159,10 +158,12 @@ header .mobile {
    background-position: bottom;
    background-repeat: no-repeat;
    padding-top: 0rem;
+   margin-top: 2rem;
   }
 
   #signup {
    display: flex;
+   flex-direction: column;
    align-items: center;
    margin-top: 2rem;
    background-color: lightgray;
@@ -170,8 +171,9 @@ header .mobile {
   }
 
   #signup .image-container {
-   max-width: 60%;
-   padding: 2rem 1.5rem;
+   width: 100%;
+   padding: 0;
+   border: 1px solid orange;
   }
 
   .header {
@@ -180,9 +182,8 @@ header .mobile {
    justify-content: center;
    word-spacing: .25rem;
    line-height: 1.2;
-   padding-right: 5rem;
+   padding-right: 0rem;
    min-height: 50%;
-   flex: 1;
   }
 
   #signup h1 {
@@ -202,7 +203,7 @@ header .mobile {
    font-size: .75rem;
    border-radius: 2px;
    background-color: #9e9d9d;
-   color: pink;
+   color: white;
   }
 /*
 	
@@ -366,7 +367,7 @@ header .mobile {
    width: 100%;
    height: auto;
    display: block;
-   margin: 0 auto;
+   margin: 0;
    padding: 0;
   }
 
@@ -380,6 +381,9 @@ header .mobile {
   #info-section .center .image-container {
     padding: 1rem;
     border: 1px solid pink;
+  } 
+  
+  #info-section .center img {
     width: 100%;
   } 
 
@@ -482,17 +486,13 @@ header .mobile {
     margin-bottom: .5rem;
   }	
 
-  #course-section .mobile h3 {
-    padding: 1rem 0 1.5rem 1rem;
-    font-weight: 400;
-  }
-  
   #course-section .mobile li {
 	font-size: 1.5rem;
 	background-color: lightgray;
 	width: 100%;
-	padding: 0 1rem;
 	margin-bottom: .5rem; 
+	padding: 1rem 0 1.5rem 1rem;
+    font-weight: 400;
   }
  
 
