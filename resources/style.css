@@ -114,7 +114,7 @@ header .mobile {
 }
 
 #signup .image-container {
-  width: 60%;
+  max-width: 60%;
   padding: 2rem 1.5rem;
 }
 
@@ -124,7 +124,6 @@ header .mobile {
 	justify-content: center;
 	word-spacing: .25rem;
 	line-height: 1.2;
-	border: 1px solid red;
 	padding-right: 5rem;
 	min-height: 50%;
 	flex: 1;
@@ -198,10 +197,11 @@ header .mobile {
 }
 
 .info1 {
- border: 1px solid lightgrey;
+ border-right: 1px solid lightgrey;
  padding: 2rem 1.5rem;
- width: 60%;
+ max-width: 60.2%;
 }
+
 
 #info-section .container {
   display: inline-flex;
@@ -316,21 +316,20 @@ header .mobile {
    padding: 0;
   } 
 
-  .info .center img{
-   padding: 1rem 1rem;
-   min-width: 100%;
-   height: auto;	
-   border: 1px solid pink;
+  .center .image-container {
+    padding: 1rem;
+    border: 1px solid pink;
+    width: 100%;
+    height: auto;
   } 
 
   .center .content {
    border: 1px solid red;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   text-align: left;
+   display: block;
    width: 100%;
   }
+
+
 
   #info-section #info ul li:last-child {
    background-color: white;
@@ -446,19 +445,24 @@ header .mobile {
   display: flex;
   background-color: #f3f3f3;
   border: 1px dashed magenta;
-}
+ }
 
 #thesis {
  display: inline-flex;
 }
 
+#thesis .info1 {
+ border: none;
+/*  padding: 1rem 1.5rem; */
+}
+ 
 #thesis-section video {
   max-width: 100%;
-  }
+}
 
 #thesis-section .info1 .content {
   border: 1px solid green;
-  padding-bottom: 1.5rem;
+/*   padding-bottom: 1rem; */
   color: #746e6e ;
   line-height: 1.2;
   font-weight: 300;
