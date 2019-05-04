@@ -86,7 +86,8 @@ header .mobile {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
+    border: 1px solid orange;
   }
 
   header .mobile li {
@@ -150,6 +151,61 @@ header .mobile {
 }
 
 @media only screen and (max-width: 480px) {
+	
+	
+  #intro-section {
+   display: flex;
+   background-image: url('../images/banner-landingpage.jpg');
+   background-position: bottom;
+   background-repeat: no-repeat;
+   padding-top: 0rem;
+  }
+
+  #signup {
+   display: flex;
+   align-items: center;
+   margin-top: 2rem;
+   background-color: lightgray;
+   font-family: "Roboto", sans-serif;
+  }
+
+  #signup .image-container {
+   max-width: 60%;
+   padding: 2rem 1.5rem;
+  }
+
+  .header {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   word-spacing: .25rem;
+   line-height: 1.2;
+   padding-right: 5rem;
+   min-height: 50%;
+   flex: 1;
+  }
+
+  #signup h1 {
+   font-size: 1.5rem;
+   font-weight: bold;
+   color: #4a4a4a;
+  }
+
+  #signup h2 {
+   font-size: 1rem;
+  }
+
+  #signup .button {
+   padding-top: .5rem;
+   padding-bottom: .5rem;
+   text-align: center;
+   font-size: .75rem;
+   border-radius: 2px;
+   background-color: #9e9d9d;
+   color: pink;
+  }
+/*
+	
   #intro-section {
   display: flex;
   flex-direction: column;
@@ -199,6 +255,7 @@ header .mobile {
   background-color: #9e9d9d;
   color: pink;
   }
+*/
 
 }
 
@@ -215,7 +272,6 @@ header .mobile {
  padding: 2rem 1.5rem;
  max-width: 60.2%;
 }
-
 
 #info-section .container {
   display: inline-flex;
@@ -434,6 +490,8 @@ header .mobile {
   #course-section .mobile li {
 	font-size: 1.5rem;
 	background-color: lightgray;
+	width: 100%;
+	padding: 0 1rem;
 	margin-bottom: .5rem; 
   }
  
@@ -483,20 +541,23 @@ header .mobile {
 
 
 @media only screen and (max-width: 480px) {
-  #thesis-section .info1 {
-  	border: none;
-  	padding: 0;
-  	margin: 0;
-  	width: 100%;
+	
+  #thesis-section {
+  display: flex;
+  background-color: #f3f3f3;
+  border: 1px dashed magenta;
+  padding: 0;
+  margin: 0;
+  width: 100%;
   }
-  
+
   #thesis-section .course-header {
     border-top: 1px solid grey;
   }
 
   #thesis-section video {
 	display: block;
-	max-width: 100%;
+	width: 100%;
 	height: auto;
 	text-align: center;
 	padding-bottom: 1.5rem;
