@@ -86,7 +86,7 @@ header .mobile {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    line-height: 1.6;
   }
 
   header .mobile li {
@@ -152,9 +152,6 @@ header .mobile {
 
 @media only screen and (max-width: 480px) {
   #intro-section {
-/*   height: 28rem; */
-  display: flex;
-  flex-direction: column;
   margin: 0;
   border: none;
   background-image: url('../images/banner-landingpage.jpg');
@@ -165,31 +162,29 @@ header .mobile {
   }
 
  #sign-up  {
-  display: block;
   position: static;
   padding: 0 1rem;
  }
  
 
 #signup .image-container {
+  display: block;
   width: 100%;
   height: auto;
   margin: 0;
   padding: 0;
   } 
 
-.header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+#sign-up .header {
+  display: block;
   word-spacing: .25rem;
   line-height: 1.2;
   border: 1px solid green;
+  padding: 0 1rem;
   }
  
  #sign-up .button {
   background-color: #9e9d9d;
-  padding: 0 1rem;
  }
 
 }
@@ -198,7 +193,7 @@ header .mobile {
 
 #info-section {
   display: flex;
-  background-color: white;
+  background-color: #f3f3f3;
   border: 1px dashed magenta;
 }
 
@@ -292,7 +287,6 @@ header .mobile {
 }
 
 @media only screen and (max-width: 480px) {
-
   
   #info-section .info1 {
 	display: none;
@@ -310,26 +304,23 @@ header .mobile {
   }
   
   #info {
-   width: 100vw;
+   width: 100%;
    height: auto;
   }
 
   .info .center {
    display: flex;
    flex-direction: column;
-   justify-content: center;
-   align-items: center;
    border: 2px dotted green;
    margin: 0;
    padding: 0;
-   width: 100%;
   } 
 
   .info .center img{
-   padding: 1rem;
-   width: 100%;
+   padding: 1rem 1rem;
+   min-width: 100%;
    height: auto;	
-   border: 2px solid pink;
+   border: 1px solid pink;
   } 
 
   .center .content {
@@ -338,7 +329,6 @@ header .mobile {
    flex-direction: column;
    justify-content: center;
    text-align: left;
-   padding: 0 1rem;
    width: 100%;
   }
 
@@ -431,7 +421,7 @@ header .mobile {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-    background-color: lightgray;
+    background-color: #f6f3f3;
     color: #746e6e;
     margin-bottom: .5rem;
   }	
