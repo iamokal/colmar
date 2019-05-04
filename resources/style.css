@@ -151,6 +151,8 @@ header .mobile {
 
 @media only screen and (max-width: 480px) {
   #intro-section {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   border: none;
   padding: 0;
@@ -164,20 +166,27 @@ header .mobile {
  #sign-up  {
   display: flex;
   flex-direction: column;
-  position: static;
-  padding: 0 1rem;
  }
  
 
-#signup .image-container {
-/*   display: block; */
+ #signup .image-container {
   width: 100%;
   height: auto;
   margin: 0;
-  padding: 0;
+  padding: 0 1rem;
   } 
   
-.header {
+  #signup h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4a4a4a;
+  }
+
+  #signup h2 {
+  font-size: 1rem;
+  }
+  
+ .header {
   word-spacing: .25rem;
   line-height: 1.2;
   border: 1px solid green;
@@ -296,22 +305,20 @@ header .mobile {
   #info-section .info1 {
 	display: none;
   }
-
-  #info-section .info {
-	display: block;
-    margin: 0 auto;
-    padding: 0;
-  }
   
   #info {
    width: 100%;
    height: auto;
+   display: block;
+   margin: 0 auto;
+   padding: 0;
   }
 
   .info .center {
    display: flex;
    flex-direction: column;
    border: 2px dotted green;
+   
   } 
 
   #info-section .center .image-container {
@@ -321,6 +328,7 @@ header .mobile {
   } 
 
   #info-section .center .content {
+   padding-left: 2rem;
    border: 1px solid red;
    display: block;
   }
