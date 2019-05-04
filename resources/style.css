@@ -43,7 +43,7 @@ header nav ul {
 }
 
 #logo {
-	color: lightgray;
+  color: lightgray;
 }
 
 nav li {
@@ -82,7 +82,7 @@ header .mobile {
   
   nav a {
     vertical-align: center;
-	}
+  }
 
   header .mobile {
     display: block;
@@ -93,7 +93,6 @@ header .mobile {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid orange;
     background-color: white;
     height: 4rem;
   }
@@ -128,14 +127,14 @@ header .mobile {
 }
 
 .header {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	word-spacing: .25rem;
-	line-height: 1.2;
-	padding-right: 5rem;
-	min-height: 50%;
-	flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  word-spacing: .25rem;
+  line-height: 1.2;
+  padding-right: 5rem;
+  min-height: 50%;
+  flex: 1;
 }
 
 #signup h1 {
@@ -168,7 +167,6 @@ header .mobile {
   #intro-section {
    display: flex;
    background-image: url('../images/banner-landingpage.jpg');
-   background-size: cover;
    background-position: bottom;
    background-repeat: no-repeat;
    padding: 0;
@@ -179,24 +177,23 @@ header .mobile {
    display: flex;
    flex-direction: column;
    margin: 0;
+   height: auto;
    background-color: lightgray;
    font-family: "Roboto", sans-serif;
   }
 
   #signup .image-container {
-   display: flex;
-/*
+   display: block;
    width: 100%;
    height: auto;
-*/
    padding: 0;
    margin: 0;
+   border: none;
    border: 1px solid orange;
   }
 
   .header {
-   padding: 0;
-   height: auto;
+   padding: 2rem 1rem;
    flex: 0;
   }
 
@@ -427,6 +424,7 @@ header .mobile {
 
   #course-section {
     background-color: #f6f3f3;
+    padding: 0 1 rem;
   }
 
   #course-section .mobile {
@@ -436,7 +434,6 @@ header .mobile {
 	align-items: stretch;
     color: #746e6e;
     margin-bottom: .5rem;
-    padding: 0 1rem;
   }	
 
   #course-section .mobile li {
