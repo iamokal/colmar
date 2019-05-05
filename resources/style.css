@@ -170,7 +170,7 @@ header .mobile {
    background-image: url('../images/banner-landingpage.jpg');
    background-position: bottom;
    background-repeat: no-repeat;
-/*    background-size: cover; */
+   background-size: cover;
    justify-content: stretch;
    padding: 0;
    height: auto;
@@ -329,13 +329,13 @@ header .mobile {
   #info-section .center .image-container {
     padding: 1rem;
     border: 1px solid pink;
-    width: 100%;
+    width: auto;
     height: auto;
   } 
   
   #info-section img {
-    width: auto;
-    height: 12rem;
+    width: 100%;
+    height: auto;
   } 
 
   #info-section .center .content {
@@ -427,11 +427,11 @@ header .mobile {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: stretch;
+	align-items: center;
     color: #746e6e;
     margin-bottom: .5rem;
     border: 1px solid pink;
-    padding: 0 1rem 0 1rem;
+    padding: 0 1rem;
   }	
 
   #course-section .mobile li {
