@@ -193,7 +193,7 @@ header .mobile {
 
   .header {
    padding: 2rem 1rem;
-   height: auto;
+   max-height: 25%;
    line-height: 1.3;
    flex: 0;
   }
@@ -291,10 +291,13 @@ header .mobile {
 }
 
 .info h5 {
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.75;
-  color: blue;
+ font-size: 1rem;
+ font-weight: 300;
+ line-height: 1.75;
+}
+
+.info a {
+ color: cornflowerblue;
 }
 
 @media only screen and (max-width: 480px) {
@@ -518,18 +521,21 @@ header .mobile {
 footer {
   background-color: #f3f3f3;
   border-top: 1px solid grey;
-  color: #746e6e ;
+  color: #746e6e;
 }
 
 footer .content {
   padding: 1rem 1.5rem;
   display: flex;
   font-size: .75rem;
-
 }
 
 footer .copyright {
   flex-grow: 1;
+}
+
+footer a {
+  color: #746e6e;
 }
 
 @media only screen and (max-width: 480px) {
