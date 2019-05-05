@@ -166,6 +166,10 @@ header .mobile {
    padding: 0;
    height: auto;
    border: 1px solid orange;
+   background-image: url('../resources/images/banner.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: 100% 100%;
   }
 
   #signup {
@@ -178,6 +182,7 @@ header .mobile {
   }
 
   #signup .image-container {
+   display: none;
    border: 1px solid red;
    width: auto;
    height: auto;
@@ -187,7 +192,6 @@ header .mobile {
 
   .header {
    padding: 2rem 1rem;
-   justify-content: stretch;
   }
 
   #signup .button {
