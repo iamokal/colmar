@@ -166,17 +166,17 @@ header .mobile {
   #intro-section {
    padding: 0;
    height: auto;
-   border: 1px solid orange;
   }
 
   #signup {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   align-items: stretch;
+   align-items: flex-end;
    margin-top: 4rem;
    height: auto;
    background-color: lightgray;
+   width: 100vw;
   }
 
   #signup .image-container {
@@ -213,7 +213,6 @@ header .mobile {
 #info-section {
   display: flex;
   background-color: #f3f3f3;
-  border: 1px dashed magenta;
 }
 
 .info1 {
@@ -227,7 +226,6 @@ header .mobile {
 }
 
 #info-section .info1 .content {
-  border: 1px solid green;
   padding-top: 2rem;
   padding-bottom: 1.5rem;
   font-weight: 300;
@@ -254,12 +252,10 @@ header .mobile {
 .info .center {
   display: inline-flex;
   text-align: left;
-  border: 2px dotted green;
 }
 
 .center .image-container {
   padding: 1rem;
-  border: 2px solid pink;
   width: 35%;
 } 
 
@@ -268,7 +264,6 @@ header .mobile {
 }
 
 .center .content {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -329,7 +324,6 @@ header .mobile {
   .info .center {
    display: flex;
    flex-direction: column;
-   border: 2px dotted green;
   } 
 
   .center .image-container-mobile {
@@ -337,7 +331,6 @@ header .mobile {
     width: auto;
     height: auto;
     padding: 1rem;
-    border: 2px solid pink;
   } 
   
   #info-section img {
@@ -347,13 +340,12 @@ header .mobile {
 
   #info-section .center .content {
    padding-left: 2rem;
-   border: 1px solid red;
    display: block;
    width: auto;
   }
   
   .info h5 {
-  color: cornflowerblue;
+  color: red;
   }
 
   #info-section #info ul li:last-child {
@@ -438,7 +430,7 @@ header .mobile {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: stretch;
+	align-items: center;
     color: #746e6e;
     margin-bottom: 0 2rem .5rem 2rem;
     border: 1px solid pink;
@@ -447,12 +439,13 @@ header .mobile {
   
   #course-section .mobile ul {
 	padding: 0 2rem;
+	width: 100%;
   }
 
   #course-section .mobile li {
 	font-size: 1.5rem;
 	background-color: lightgray;
-	width: 100%;
+	width: auto;
 	margin-bottom: .5rem; 
 	padding: 1rem 0 1.5rem 1rem;
     font-weight: 400;
