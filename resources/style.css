@@ -182,7 +182,7 @@ header .mobile {
   #signup .image-container {
    border: 1px solid red;
    max-width: 100%;
-   height: 20rem;
+   height: auto;
    padding: 0;
    margin: 0;
   }
