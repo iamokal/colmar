@@ -166,7 +166,7 @@ header .mobile {
    padding: 0;
    height: auto;
    border: 1px solid orange;
-   background-image: url('../images/banner.jpg');
+   background-image: url('./images/banner.jpg');
    background-size: cover;
    background-repeat: no-repeat;
    background-position: 100% 100%;
@@ -313,6 +313,7 @@ header .mobile {
   
   .center .image-container {
 	display: none;
+  }
   
   #info {
    width: auto;
