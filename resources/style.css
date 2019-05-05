@@ -278,7 +278,6 @@ header .mobile {
   background-color: lightgray;
 }
 
-
 .info h3 {
   font-weight: bold;
   line-height: 1.75;
@@ -331,12 +330,12 @@ header .mobile {
     padding: 1rem;
     border: 1px solid pink;
     width: auto;
-    height: 9rem;
+    height: auto;
   } 
   
   #info-section img {
     width: 100%;
-    height: auto;
+    height: 10rem;
   } 
 
   #info-section .center .content {
@@ -356,10 +355,8 @@ header .mobile {
 
 #course-section {
   display: flex;
-  padding: 0 2.5rem; /*48px*/
+  padding: 0 2.5rem 1rem 2.5rem; /*48px*/ /*top and bottom margin = 1rem add 1rem to get 32px*/
   background-color: lightgray;
-  padding-bottom: 1rem; /*top and bottom margin = 1rem add 1rem to get 32px*/
-
 }
 
 .course-header {
@@ -371,7 +368,6 @@ header .mobile {
   color: #4a4a4a;
   text-align: center;
 }
-
 
 .course-container {
   display: inline-flex;
@@ -424,6 +420,7 @@ header .mobile {
 
   #course-section {
     background-color: #f6f3f3;
+    padding: 0; 
   }
 
   #course-section .mobile {
@@ -434,8 +431,7 @@ header .mobile {
     color: #746e6e;
     margin-bottom: .5rem;
     border: 1px solid pink;
-    overflow: hidden;
-/*     padding: 0 1rem; */
+    padding: 0 1rem;
   }	
 
   #course-section .mobile li {
