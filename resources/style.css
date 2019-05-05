@@ -113,9 +113,6 @@ header .mobile {
 
 #intro-section {
   display: flex;
-  background-image: url('../images/banner-landingpage.jpg');
-  background-position: bottom;
-  background-repeat: no-repeat;
   padding-top: 2rem;
 }
 
@@ -164,13 +161,8 @@ header .mobile {
 }
 
 @media only screen and (max-width: 480px) {
-	
+
   #intro-section {
-   display: flex;
-   align-items: stretch;
-   background-image: url('../images/banner-landingpage.jpg');
-   background-position: bottom;
-   background-repeat: no-repeat;
    padding: 0;
    height: auto;
    border: 1px solid orange;
@@ -179,7 +171,6 @@ header .mobile {
   #signup {
    display: flex;
    flex-direction: column;
-   align-content: stretch;
    margin-top: 4rem;
    height: auto;
    background-color: lightgray;
@@ -187,6 +178,8 @@ header .mobile {
   }
 
   #signup .image-container {
+   display: flex;
+   align-items: stretch;
    border: 1px solid red;
    width: 100%;
    height: auto;
