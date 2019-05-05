@@ -73,16 +73,17 @@ header .mobile {
    border: 1px solid magenta;
   }
   
+  header .content {
+    padding: 0;
+  }
+  
+  
   header .desktop {
     display: none;
   }
   
   #desk-logo {
 	display: none;
-  }
-  
-  header .content {
-    padding: 0;
   }
   
   nav a {
@@ -169,7 +170,8 @@ header .mobile {
    background-image: url('../images/banner-landingpage.jpg');
    background-position: bottom;
    background-repeat: no-repeat;
-   background-size: 100% 100%;
+/*    background-size: cover; */
+   justify-content: stretch;
    padding: 0;
    height: auto;
    border: 1px solid orange;
@@ -194,7 +196,6 @@ header .mobile {
 
   .header {
    padding: 2rem 1rem;
-   flex: 0;
   }
 
   #signup .button {
@@ -431,7 +432,6 @@ header .mobile {
 	align-items: stretch;
     color: #746e6e;
     margin-bottom: .5rem;
-    padding-left: -1rem;
 /*     padding: 0 1rem; */
   }	
 
