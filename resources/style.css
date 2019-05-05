@@ -70,7 +70,6 @@ header .mobile {
 	
   header {
    height: auto;
-   border: 1px solid magenta;
   }
   
   header .content {
@@ -149,6 +148,7 @@ header .mobile {
 #signup h2 {
   font-size: 1.25rem;
   font-weight: bold;
+  color: #4a4a4a;
 }
 
 #signup .button {
@@ -175,20 +175,20 @@ header .mobile {
    align-items: flex-end;
    margin-top: 4rem;
    height: auto;
+   width: 100%;
    background-color: lightgray;
-   width: 100vw;
   }
 
   #signup .image-container {
    border: 1px solid red;
-   width: auto;
+   width: 30rem;
    height: auto;
    padding: 0;
    margin: 0;
   }
   
   #signup img {
-	width: 100%;
+	width: 50%;
     height: auto;  
   }
 
@@ -200,7 +200,6 @@ header .mobile {
    padding-top: .5rem;
    padding-bottom: .5rem;
    text-align: center;
-   font-size: .75rem;
    border-radius: 2px;
    background-color: #9e9d9d;
    color: white;
@@ -350,6 +349,7 @@ header .mobile {
 
   #info-section #info ul li:last-child {
    background-color: #f3f3f3;
+   border-bottom: 1px solid gray;
   }
 
 }
@@ -435,12 +435,8 @@ header .mobile {
     margin-bottom: 0 2rem .5rem 2rem;
     border: 1px solid pink;
     overflow: hidden;
+    padding: 0 2rem;
   }	
-  
-  #course-section .mobile ul {
-	padding: 0 2rem;
-	width: 100%;
-  }
 
   #course-section .mobile li {
 	font-size: 1.5rem;
