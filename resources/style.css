@@ -178,10 +178,8 @@ header .mobile {
   }
 
   #signup .image-container {
-   display: flex;
-   align-items: stretch;
    border: 1px solid red;
-   width: 100%;
+   width: auto;
    height: auto;
    padding: 0;
    margin: 0;
@@ -189,6 +187,7 @@ header .mobile {
 
   .header {
    padding: 2rem 1rem;
+   justify-content: stretch;
   }
 
   #signup .button {
