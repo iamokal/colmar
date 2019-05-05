@@ -15,7 +15,7 @@ html {
 
 .image-container img {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 
 /* Header */
@@ -331,7 +331,7 @@ header .mobile {
     padding: 1rem;
     border: 1px solid pink;
     width: auto;
-    height: auto;
+    height: 9rem;
   } 
   
   #info-section img {
@@ -432,6 +432,7 @@ header .mobile {
 	align-items: stretch;
     color: #746e6e;
     margin-bottom: .5rem;
+    border: 1px solid pink;
 /*     padding: 0 1rem; */
   }	
 
