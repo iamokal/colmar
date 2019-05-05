@@ -166,23 +166,19 @@ header .mobile {
    padding: 0;
    height: auto;
    border: 1px solid orange;
-   background-image: url("https://github.com/iamokal/colmar/blob/master/resources/images/banner.jpg");
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: 100% 100%;
   }
 
   #signup {
    display: flex;
    flex-direction: column;
+   justify-content: center;
+   align-items: stretch;
    margin-top: 4rem;
    height: auto;
    background-color: lightgray;
-   font-family: "Roboto", sans-serif;
   }
 
   #signup .image-container {
-   display: none;
    border: 1px solid red;
    width: auto;
    height: auto;
@@ -331,18 +327,16 @@ header .mobile {
 
   .center .image-container-mobile {
 	display: block;  
-    width: 100%;
+    width: auto;
     height: auto;
     padding: 1rem;
     border: 2px solid pink;
   } 
   
-/*
   #info-section img {
     width: 100%;
     height: auto;
   } 
-*/
 
   #info-section .center .content {
    padding-left: 2rem;
