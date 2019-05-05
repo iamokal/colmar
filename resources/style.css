@@ -336,6 +336,7 @@ header .mobile {
   
   #info-section img {
     width: 100%;
+    height: auto;
   } 
 
   #info-section .center .content {
@@ -433,6 +434,7 @@ header .mobile {
     color: #746e6e;
     margin-bottom: .5rem;
     border: 1px solid pink;
+    overflow: hidden;
 /*     padding: 0 1rem; */
   }	
 
