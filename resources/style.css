@@ -192,8 +192,9 @@ header .mobile {
   }
 
   .header {
+   border: 1px solid magenta;
    padding: 2rem 1rem;
-   height: auto;
+   height: 20rem;
   }
 
   #signup .button {
@@ -349,6 +350,7 @@ header .mobile {
 
   #info-section #info ul li:last-child {
    background-color: #f3f3f3;
+   padding-bottom: 2rem;
   }
 
 }
@@ -423,7 +425,7 @@ header .mobile {
 
   #course-section {
     background-color: #f6f3f3;
-    padding: 0; 
+    padding-bottom: 1.5rem; 
   }
 
   #course-section .mobile {
@@ -541,6 +543,10 @@ footer .copyright {
 }
 
 @media only screen and (max-width: 480px) {
+  footer {
+  border: none;
+  }
+  
   footer .termsandprivacy {
     display: none;
   }
