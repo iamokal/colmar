@@ -166,7 +166,7 @@ header .mobile {
    padding: 0;
    height: auto;
    border: 1px solid orange;
-   background-image: url('./resources/images/banner.jpg');
+   background-image: url('../images/banner.jpg');
    background-size: cover;
    background-repeat: no-repeat;
    background-position: 100% 100%;
@@ -311,6 +311,9 @@ header .mobile {
 	display: none;
   }
   
+  .center .image-container {
+	display: none;
+  
   #info {
    width: auto;
    height: auto;
@@ -325,17 +328,18 @@ header .mobile {
    border: 2px dotted green;
   } 
 
-  #info-section .center .image-container-mobile {
-    padding: 1rem;
-    border: 1px solid pink;
+  .center .image-container-mobile {
     width: auto;
     height: auto;
+    padding: 1rem;
   } 
   
+/*
   #info-section img {
     width: 100%;
     height: auto;
   } 
+*/
 
   #info-section .center .content {
    padding-left: 2rem;
