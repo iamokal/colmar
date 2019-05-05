@@ -181,7 +181,7 @@ header .mobile {
   #signup .image-container {
    border: 1px solid red;
    max-width: 100%;
-   height: auto;
+   height: 12rem; /*auto too short*/
    padding: 0;
    margin: 0;
   }
@@ -194,7 +194,7 @@ header .mobile {
   .header {
    border: 1px solid magenta;
    padding: 2rem 1rem;
-   height: 20rem;
+   height: 15rem;
   }
 
   #signup .button {
@@ -361,6 +361,7 @@ header .mobile {
   display: flex;
   padding: 0 2.5rem 1rem 2.5rem; /*48px*/ /*top and bottom margin = 1rem add 1rem to get 32px*/
   background-color: lightgray;
+  border-top: 1px solid gray;
 }
 
 .course-header {
@@ -371,7 +372,6 @@ header .mobile {
   padding-bottom: 1rem; /*16px*/
   color: #4a4a4a;
   text-align: center;
-  border-top: 1px solid gray;
 }
 
 .course-container {
