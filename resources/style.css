@@ -179,9 +179,8 @@ header .mobile {
   }
 
   #signup .image-container {
-   border: 1px solid red;
    max-width: 100%;
-   height: 25rem; /*auto too short*/
+   height: 23rem; /*auto was too short*/
    padding: 0;
    margin: 0;
   }
@@ -192,10 +191,9 @@ header .mobile {
   }
 
   .header {
-   border: 1px solid magenta;
    padding: 2rem 1rem;
-   height: auto;
-   line-height: 1.5;
+   max-height: 30rem;
+   line-height: 1.3;
    flex: 0;
   }
 
@@ -438,7 +436,7 @@ header .mobile {
 	justify-content: center;
 	align-items: stretch;
     color: #746e6e;
-    margin: 0 2rem .5rem 2rem;
+    margin-bottom: .5rem;
     overflow: hidden;
     padding: 0 1rem 0 1rem;
   }	
