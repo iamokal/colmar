@@ -259,8 +259,11 @@ header .mobile {
   padding: 1rem;
   border: 2px solid pink;
   width: 35%;
-
 } 
+
+.center .image-container-mobile {
+  display: none;
+}
 
 .center .content {
   border: 1px solid red;
@@ -322,7 +325,7 @@ header .mobile {
    border: 2px dotted green;
   } 
 
-  #info-section .center .image-container {
+  #info-section .center .image-container-mobile {
     padding: 1rem;
     border: 1px solid pink;
     width: auto;
